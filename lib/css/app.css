@@ -1,0 +1,46 @@
+div.block{
+    overflow:hidden;
+}
+div.block label{
+    width:180px;
+    display:block;
+    float:left;
+    text-align:left;
+}
+div.block .input{
+    margin-left:4px;
+    width:25px;
+    float:left;
+}
+span.add-on i {
+  /*display: block;*/
+  /*float:left;*/  
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+.inline {margin:0; padding: 0; margin-bottom: 25px;}
+.inline li {display: inline; padding-right: 15px;}
+.error{
+	color:red;
+	font-weight:bold;
+}
+
+.icon {
+    width:15px;
+    height:15px;
+    float: right;
+    position: relative;
+}
+.txt{
+    background:red;
+    font-size:large;
+    color: white;
+    position:absolute;
+    top: -5px;
+    left: -5px;
+}
+
+body {
+    padding-top: 80px;
+}

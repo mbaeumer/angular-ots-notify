@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notification icon demo</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-app="app" ng-controller="appController">
+<!-- /TOP MENU -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav nav-pills">
+        <li><a href="#/home">Home</a></li>
+    </ul>
+
+    <span class="icon glyphicon glyphicon-envelope" style="font-size:24px;">
+        <div class="txt" ng-show="amountOfNotifications > 0">{{getAmountOfNotifications()}}</div>
+    </span>
+
+    <a class="btn" href ng-click="increase()" >
+        <span>Increase</span>
+        <i class="glyphicon glyphicon-plus"></i>
+    </a>
+
+    <a class="btn" href ng-click="decrease()" >
+        <span>Decrease</span>
+        <i class="glyphicon glyphicon-minus"></i>
+    </a>
+
+    <a class="btn" href ng-click="clear()" >
+        <span>Clear</span>
+        <i class="glyphicon glyphicon-remove-sign"></i>
+    </a>
+
+</div>
+<!-- MAIN PAGE -->
+<!-- /MAIN PAGE -->
+
+<script src="lib/angular-1.2.9.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="lib/angular-resource.js"></script>
+
+<script src="lib/angular-strap-min.js"></script>
+<script src="lib/ui-bootstrap-0.10.0.js"></script>
+<script src="lib/angular-touch.js"></script>
+<script src="app.js"></script>
+
+<script src="controllers/appController.js"></script>
+
+<!-- MAIN CONTENT -->
+<div ng-view id="mainContent">
+</div>
+</body>
+</html>
